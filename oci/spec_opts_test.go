@@ -585,7 +585,6 @@ func TestDropCaps(t *testing.T) {
 		s.Process.Capabilities.Bounding,
 		s.Process.Capabilities.Effective,
 		s.Process.Capabilities.Permitted,
-		s.Process.Capabilities.Inheritable,
 	} {
 		if capsContain(cl, "CAP_CHOWN") {
 			t.Errorf("cap list %d contains dropped cap", i)
